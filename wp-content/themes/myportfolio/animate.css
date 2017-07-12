@@ -1,0 +1,684 @@
+@charset "UTF-8";
+
+/*!
+ * animate.css -http://daneden.me/animate
+ * Version - 3.5.1
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ * Copyright (c) 2016 Daniel Eden
+ */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDownBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -2000px, 0);
+    transform: translate3d(0, -2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeftBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-2000px, 0, 0);
+    transform: translate3d(-2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRightBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(2000px, 0, 0);
+    transform: translate3d(2000px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUpBig {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig;
+}
+
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+/*======
+自作のアニメーション
+=======*/
+/* ハンバーガナビメニューのアニメーション */
+.openHeaderNavi .headerNaviItems{
+  background-color: #747677;
+}
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(1){
+  top:11px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+}
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(2),
+.openHeaderNavi .headerNaviToggle_inner span:nth-child(3){
+  top:11px;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+}
+.openHeaderNavi .headerNaviItems{
+  right: 0;
+}
+.openHeaderNavi .headerNaviItems_item a{
+  opacity: 1;
+}
+/*transition*/
+.transition{
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  }
+/* topのblockのアニメーション */
+.block-position-top{
+  -webkit-animation: fadeInDown 0.5s;
+  animation: fadeInDown 0.5s;
+  animation-fill-mode: forwards;
+}
+.block2{
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.block4{
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.block6{
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+.block8{
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.block10{
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+.block-position-bottom{
+  -webkit-animation: fadeInUp 0.5s;
+  animation: fadeInUp 0.5s;
+  animation-fill-mode: forwards;
+}
+.block1{
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.block3{
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.block5{
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.block7{
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.block9{
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
+}
+/* topのSpeech */
+.topSpeech,
+.topTree{
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@media (max-width: 768px) {
+.topTree{
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  display: none;
+}
+}
+/* topのArrow jsでパルスする*/
+.topArrow{
+  animation:fadeIn ease-in 6s forwards;
+}
+/* wow.min.jsを利用するためのcss */
+.wow{visibility: hidden;}
+/* topのlikeのアニメーション */
+.likeContents_topCat,
+.likeContents_topComic,
+.likeContents_bottomKid,
+.likeContents_bottomLive,
+.likeContents_img{
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}/* 中央の画像の左右の移動 */
+.ani-topCat.likeContents_img,
+.ani-bottomKid.likeContents_img{
+  left: -webkit-calc(100% - 390px);/* 430=270+160 */
+  left: calc(100% - 390px);
+  }
+.ani-topComic.likeContents_img,
+.ani-bottomLive.likeContents_img{
+  left: 70px;/*110=270-160*/
+}/* hoverしている項目のアニメーション */
+.ani-topCat.likeContents_catInner,
+.ani-topCat.likeContents_topCat,
+.ani-topComic.likeContents_comicInner,
+.ani-topComic.likeContents_topComic,
+.ani-bottomKid.likeContents_kidInner,
+.ani-bottomKid.likeContents_bottomKid,
+.ani-bottomLive.likeContents_liveInner,
+.ani-bottomLive.likeContents_bottomLive{
+  width: 100%;
+  height: 100%;
+}/* hoverする側(左側の項目)の正方形のアニメーション */
+.ani-topCat.likeContents_kidInner,
+.ani-topCat.likeContents_bottomKid,
+.ani-bottomKid.likeContents_catInner,
+.ani-bottomKid.likeContents_topCat{
+left: auto;
+right: 230px;
+}/* hoverする側(右側の項目)の正方形のアニメーション */
+.ani-topComic.likeContents_liveInner,
+.ani-topComic.likeContents_bottomLive,
+.ani-bottomLive.likeContents_comicInner,
+.ani-bottomLive.likeContents_topComic{
+left: 230px;
+right: auto;
+}
+.ani-topCat .likeContents_topCat_color,
+.ani-topComic .likeContents_topComic_color,
+.ani-bottomKid .likeContents_bottomKid_color,
+.ani-bottomLive .likeContents_bottomLive_color{
+width: 100%;
+}
+.ani-topCat .likeContents_topCat_body,
+.ani-topComic .likeContents_topComic_body,
+.ani-bottomKid .likeContents_bottomKid_body,
+.ani-bottomLive .likeContents_bottomLive_body{
+  display: inline;
+}/* hoverしていない項目のアニメーション */
+.ani-other.likeContents_catInner,
+.ani-other.likeContents_topCat,
+.ani-other.likeContents_comicInner,
+.ani-other.likeContents_topComic,
+.ani-other.likeContents_kidInner,
+.ani-other.likeContents_bottomKid,
+.ani-other.likeContents_liveInner,
+.ani-other.likeContents_bottomLive{
+  width: 230px;
+  height: 50%;
+}
+.ani-other.likeContents_catInner,
+.ani-other.likeContents_comicInner,
+.ani-other.likeContents_kidInner,
+.ani-other.likeContents_liveInner{
+  z-index: 5;
+  }
+.ani-other.likeContents_topCat,
+.ani-other.likeContents_topComic,
+.ani-other.likeContents_bottomKid,
+.ani-other.likeContents_bottomLive{
+  z-index: 3;
+}http://localhost:8888/index.html
+.ani-other .likeContents_topCat_color,
+.ani-other .likeContents_topComic_color,
+.ani-other .likeContents_bottomKid_color,
+.ani-other .likeContents_bottomLive_color{
+z-index: 4;
+}
+.ani-other .likeContents_topCat_img,
+.ani-other .likeContents_topComic_img,
+.ani-other .likeContents_bottomKid_img,
+.ani-other .likeContents_bottomLive_img{
+  display: none;
+}
+/* worksの作品にhoverした時 */
+.hoverWorks .item_body_img{
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

@@ -1,0 +1,86 @@
+@charset "utf-8";
+#contact{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.contactTitle{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 40px;
+  color: #686B6C;
+}
+.contactWritting{
+  margin: 30px 0;
+}
+.contactWritting p,
+.contactForm{
+  width: 85%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.contactWritting p{
+  font-size: 16px;
+  color: #686B6C;
+}
+.contactFormContents{
+  margin: 0 50px;
+  margin-top: 40px;
+}
+.contactFormContents label{
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  color: #696969;
+}
+.contactFormContents_item,
+.contactFormContents_message{
+  border: 1px #696969 solid;
+}
+.contactFormContents_item{
+  width: 100%;
+  height: 16px;
+  margin-bottom: 20px;
+}
+.contactFormContents_message{
+  width: 100%;
+  height: 120px;
+}
+.contactFormContents_button{
+  width: 100%;
+}
+.contactFormContents_button .button{
+  margin: 30px auto;
+  background-color: #45D871;
+  border: #45D871 2px solid;
+}
+.contactFormContents_button .button:hover{
+  background-color: #fff;
+  color: #45D871;
+}
+@media (max-width: 560px) {
+  .contactWritting p,
+  .contactForm{
+    width: 90%;
+  }
+  .contactFormContents{
+    margin: 0 30px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 410px) {
+  .contactWritting{
+    margin: 20px 0;
+  }
+  .contactFormContents{
+    margin: 0 20px;
+  }
+  .contactWritting p{
+    font-size: 13px;
+  }
+  .contactFormContents label{
+    font-size: 13px;
+  }
+  .contactOr{
+    font-size: 24px;
+  }
+}

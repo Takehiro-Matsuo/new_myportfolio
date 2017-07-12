@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+  <title>MatsuoTakehiro's portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="author" content="松尾健広のポートフォリオサイト">
+  <meta name="keywords" content="松尾健広,MatsuoTakehiro,TakehiroMatsuo,portfolio">
+  <meta name="description" content="松尾健広のウェブポートフォリオ。">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/works.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/aWork.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/contact.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" media="screen, print" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen, print" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <style type="text/css">
+  #send{
+    max-width: 1280px;
+    margin: auto;
+  }
+  .sendMessage{
+    text-align: center;
+  }
+  .sendMessage h1{
+    margin: 40px auto;
+    margin-top: 20%;
+    font-size: 35px;
+    color: #FA657C;
+  }
+  .sendMessage p{
+    margin: 0 auto;
+    margin-bottom: 80px;
+    font-size: 20px;
+    color: #696B6C;
+  }
+  .sendButton{
+    width: 100%;
+  }
+  .sendButton a{
+    background-color: #BAB8B8;
+    color: #fff;
+  }
+  .sendButton a:hover{
+    background-color: #fff;
+    color: #BAB8B8;
+    border: #BAB8B8 2px solid;
+  }
+  @media (max-width: 500px) {
+      .sendMessage h1{
+      margin: 30px auto;
+      font-size: 22px;
+      margin-top: 20%;
+    }
+    .sendMessage p{
+      font-size: 13px;
+    }
+
+  }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="headerLogo">
+          <a href="index.html">
+            <img src="img/logocat.png">
+            <div class="headerLogo_logo">
+            <h1>Matsuo Takehiro</h1>
+            <p>'s portfolio Website</p>
+          </div>
+          </a>
+      </div>
+      <!-- .hearderLogo -->
+      <div class="headerNaviToggle">
+        <div class="headerNaviToggle_inner">
+        <span></span><span></span><span></span>
+        <h2>MENU</h2>
+      </div>
+    </div><!-- headerNaviToggle -->
+      <nav class="headerNaviItems">
+        <ul>
+          <li class="headerNaviItems_item"><a href="index.html">Top</a></li>
+          <li class="headerNaviItems_item"><a href="works.html">Works</a></li>
+          <li class="headerNaviItems_item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- #header -->
+    <div id="contents">
+      <div id="send">
+        <div class="sendMessage wow fadeIn">
+          <h1>メールを送信しました</h1>
+          <p>フォームのご記入ありがとうございます。<br>
+            こちらから確認のメールを送らせていただきます。</p>
+        </div><!-- .sendMessage -->
+        <div class="sendButton wow fadeIn"><a class="button buttonTransition" href="index.html">topページへ戻る</a></div>
+      </div>
+    </div><!-- #contents -->
+    <script>
+    $('.headerNaviToggle').click(function(){//headerのnaviを開くアニメーション
+      $('#header').toggleClass('openHeaderNavi');
+    });
+    </script>
+    <script>new WOW().init();//画面スクロール時のアニメーションのトリガー</script>
+  </body>
+  </html>

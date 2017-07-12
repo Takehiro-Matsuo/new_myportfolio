@@ -1,0 +1,277 @@
+@charset "utf-8";
+#aWork{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.aWorkTitle{
+  margin: 40px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #747476;
+}
+.aWorkWebsite,
+.aWorkDetail{
+  margin: 0 50px;
+}
+.aWorkWebsite_inner,
+.aWorkResponsive_inner,
+.aWorkDetail{
+  border-radius: 10px;
+}
+.aWorkResponsive,
+.aWorkDetail,
+.aWorkButton{
+  margin-bottom: 50px;
+}
+.aWorkWebsite_inner{
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: #E6E6E4;
+  box-shadow: 5px 5px 5px #999;
+}
+.aWorkWebsite_img{
+  width: 100%;
+  height: auto;
+}
+.aWorkResponsive_inner{
+  margin: 0 50px;
+  padding: 15px;
+  background-color: #E6E6E4;
+}
+.aWorkResponsive_img{
+  width: 100%;
+  height: auto;
+}
+.aWorkResponsive_circle{
+  width: 100%;
+  margin-top: 10px;
+}
+.aWorkResponsive_circle span{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 100%;
+  border: #c1c1c4 1px solid;
+}
+.aWorkButton{
+  width: 100%;
+}
+.aWorkButton button{
+  background-color: #E889B5;
+  border: #E889B5 2px solid;
+}
+.aWorkButton button:hover{
+  background-color: #fff;
+  color: #E889B5;
+}
+.aWorkDetail{
+  border: #b1b1af 2px solid;
+}
+.aWorkDetail_title{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: #747476;
+}
+.aWorkDetail_underline{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  margin-bottom: 40px;
+}
+.aWorkDetail_underline div{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 60px;
+  border-top: #b1b1af 2px solid;
+}
+.aWorkDetailContents{
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 80%;
+  color: #7f7f7f;
+}
+.aWorkDetailContents_left dl,
+.aWorkDetailContents_right dl{
+  /*padding-left: 30px;*/
+}
+.aWorkDetailContents_left dt,
+.aWorkDetailContents_right dt{
+  padding-left: 10px;
+  border-left: 5px #fff solid;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.aWorkDetailContents_left dd,
+.aWorkDetailContents_right dd{
+  padding-left: 20px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.aWorkNavi{
+  margin-bottom:30px;
+  width: 100%;
+  overflow: hidden;
+}
+.aWorkNavi_previous,
+.aWorkNavi_next{
+  font-size: 20px;
+  color: #7f7f7f;
+}
+.aWorkNavi_previous{
+  float: right;
+  padding-right: 30px;
+  }
+.aWorkNavi_next{
+  float: left;
+  padding-left: 30px;
+}
+
+@media (max-width: 768px){
+  .aWorkResponsive_inner{
+    margin: 0 30px;
+    padding: 10px;
+  }
+  .left .aWorkResponsive_inner{
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  .right .aWorkResponsive_inner{
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+  .aWorkResponsive_circle span{
+    width: 30px;
+    height: 30px;
+  }
+  .aWorkDetailContents_left dt,
+  .aWorkDetailContents_right dt{
+    padding-left: 0;
+  }
+  .aWorkDetailContents_left dd,
+  .aWorkDetailContents_right dd{
+    padding-left: 10px;
+  }
+}
+@media (max-width: 646px){
+  .aWorkTitle{
+    margin: 30px 0;
+    font-size: 26px;
+  }
+  .aWorkResponsive_circle span{
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 560px){
+  .aWorkTitle{
+    margin: 25px 0;
+    font-size: 20px;
+  }
+  .aWorkWebsite,
+  .aWorkDetail{
+    margin: 0 30px;
+  }
+  .aWorkWebsite_inner{
+    padding: 10px;
+  }
+  .aWorkResponsive_inner{
+    margin: 0 20px;
+    padding: 7px;
+  }
+  .left .aWorkResponsive_inner{
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  .right .aWorkResponsive_inner{
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  .aWorkResponsive_circle{
+    margin-top: 7px;
+  }
+  .aWorkNavi{
+    margin:20px 0;
+    }
+  .aWorkNavi_previous,
+  .aWorkNavi_next{
+    font-size: 16px;
+  }
+}
+@media (max-width: 410px){
+  .aWorkWebsite_inner{
+    margin-bottom: 30px;
+  }
+  .aWorkResponsive_circle span{
+    width: 20px;
+    height: 20px;
+  }
+  .aWorkResponsive_circle{
+    margin-top: 5px;
+  }
+  .aWorkDetail_title{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #747476;
+  }
+  .aWorkDetail_underline{
+    margin-bottom: 30px;
+  }
+  .aWorkDetail_underline div{
+    width: 40px;
+  }
+  .aWorkDetailContents{
+    margin-bottom: 20px;
+  }
+  .aWorkDetailContents{
+    width: 90%;
+  }
+  .aWorkDetailContents_left dt,
+  .aWorkDetailContents_right dt{
+    border-left: 5px #fff solid;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .aWorkDetailContents_left dd,
+  .aWorkDetailContents_right dd{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .aWorkNavi_previous,
+  .aWorkNavi_next{
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px){
+  .aWorkTitle{
+    margin: 15px 0;
+    font-size: 18px;
+  }
+  .aWorkWebsite,
+  .aWorkDetail{
+    margin: 0 20px;
+  }
+  .aWorkResponsive_inner{
+    margin: 0 15px;
+    padding: 5px;
+  }
+  .left .aWorkResponsive_inner{
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .right .aWorkResponsive_inner{
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .aWorkResponsive_circle{
+    margin-top: 5px;
+  }
+  .aWorkResponsive_circle span{
+    width: 15px;
+    height: 15px;
+  }
+}
