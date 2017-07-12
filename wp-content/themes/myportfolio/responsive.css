@@ -71,6 +71,9 @@
     width: 100%;
     height: 80px;
   }
+  .headerSns{
+    display: inline;
+  }
   .headerNaviItems_item a{
     opacity: 0;
     line-height: 80px;

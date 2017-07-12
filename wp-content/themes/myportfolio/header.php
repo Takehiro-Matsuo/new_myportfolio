@@ -55,9 +55,17 @@ and open the template in the editor.
     </div><!-- headerNaviToggle -->
       <nav class="headerNaviItems">
         <ul>
-          <li class="headerNaviItems_item headerNaviItems_item-state-active"><a class="font_sniglet" href="<?php echo esc_url(home_url('/') ); ?>">Top</a></li>
-          <li class="headerNaviItems_item"><a class="font_sniglet" href="<?php echo get_template_directory_uri();?>/works/">Works</a></li>
-          <li class="headerNaviItems_item"><a class="font_sniglet" href="<?php echo get_template_directory_uri();?>/contact/">Contact</a></li>
+          <li class="headerNaviItems_item headerHover headerNaviItems_item-state-active"><a class="font_sniglet" href="<?php echo esc_url(home_url('/') ); ?>">Top</a></li>
+          <li class="headerNaviItems_item headerHover"><a class="font_sniglet" href="<?php echo get_template_directory_uri();?>/works/">Works</a></li>
+          <li class="headerNaviItems_item headerHover"><a class="font_sniglet" href="<?php echo get_template_directory_uri();?>/contact/">Contact</a></li>
+          <li class="headerNaviItems_item">
+            <div class="headerSns footerSns">
+                <ul>
+                  <li class="footerSns_facebook"><a class="transition" href="https://www.facebook.com/takehiro.matsuo.357?fref=ts"><img src="<?php echo get_template_directory_uri();?>/img/icon_facebook.svg" alt="facebook"></a></li>
+                  <li class="footerSns_github"><a class="transition" href="https://github.com/Takehiro-Matsuo"><img src="<?php echo get_template_directory_uri();?>/img/icon_github.svg" alt="github"></a></li>
+                </ul>
+            </div><!-- .footerSns -->
+          </li>
         </ul>
       </nav>
     </header>
